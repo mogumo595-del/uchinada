@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>内灘町の「食」PRサイト</title>
+<style>
+  :root {
+    --primary-color: #196DAC;
+    --secondary-color: #186845;
+    --bg-color: #fffaf6;
+    --text-color: #333333;
+    --font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto 3rem auto;
+    padding: 0 1rem;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+  main.visible {
+    opacity: 1;
+  }
+  h2 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(25, 109, 172, 0.15);
+    padding: 1.6rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .image-placeholder {
+    width: 100%;
+    height: 220px;
+    background-color: #f0e6d7;
+    border: 2px dashed var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    user-select: none;
+  }
+  p {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+  }
+  /* フェミニンで柔らかいフォント＆色調 */
+  h1, h2 {
+    font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  }
+
+  /* アニメーション用のスタイル */
+  #splash {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOutSplash 1s ease-in-out 2.5s forwards;
+  }
+  #splash h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+  }
+  #splash p {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  @keyframes fadeOutSplash {
+    to { opacity: 0; visibility: hidden; }
+  }
+</style>
+</head>
+<body>
+<div id="splash">
+  <h1>内灘町の「食」</h1>
+  <p>心と身体に優しいおいしさへようこそ</p>
+</div>
+
+<header>
+  内灘町の「食」〜心と身体に優しいおいしさ〜
+</header>
+<main id="mainContent">
+  <section>
+    <h2>内灘餅</h2>
+    <div class="image-placeholder">No images</div>
+    <p>砂丘地で穫れる落花生をふんだんに入れた、優しい甘さの「ピーナッツ餅」は、内灘町の西荒屋地区で昔から子どもたちに愛されてきたおやつです。</p>
+    <p>昔ながらの味を絶やさないよう、西荒屋地区の地域おこし団体「西荒屋営農促進会」のメンバーが、「内灘餅」として、ひとつひとつ丁寧に手作業で製造・販売しています。ピーナッツも餅米もMade in 内灘。風味豊かな食感と優しい甘さが特徴です。</p>
+  </section>
+  <section>
+    <h2>砂丘の真珠（らっきょう）</h2>
+    <div class="image-placeholder">No images</div>
+    <p>内灘砂丘で採れた3年子らっきょうは、ひと粒ひと粒、手作業で丁寧に皮を取り酢漬けしており、シャキシャキとした歯ごたえが特徴です。</p>
+    <p>「おいCまち内灘」は、無農薬・非化学肥料を使用し、町内の高校生や高齢者の方とも連携して加工・販売を行っています。</p>
+  </section>
+  <section>
+    <h2>ミルク王国ウチナダ</h2>
+    <div class="image-placeholder">No images</div>
+    <p>内灘町は日本海に面し、河北潟や内灘砂丘が広がる町です。河北潟干拓地では酪農が営まれ、令和5年度には石川県の牛乳生産量の61%を内灘町産が占めています。</p>
+    <p>「ミルク王国ウチナダ」では、内灘町のミルクでおもてなしする店を「ミルク王国の店」として認定し、各店がオリジナル商品を提供しています。</p>
+  </section>
+</main>
+<footer>
+  © 内灘町 食のPRサイト
+</footer>
+
+<script>
+  // ページコンテンツをアニメーション終了まで非表示にし、終了後に表示
+  window.addEventListener('load', function(){
+    const splash = document.getElementById('splash');
+    const mainContent = document.getElementById('mainContent');
+
+    // splashのアニメーションと同じ時間(3秒)待機してから main を表示
+    setTimeout(() => {
+      mainContent.classList.add('visible');
+      splash.style.display = 'none';
+    }, 3000);
+  });
+</script>
+</body>
+</html>
